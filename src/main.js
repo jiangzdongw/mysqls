@@ -51,7 +51,7 @@ function init(config = {}) {
             queueLimit: config.queueLimit || 0,
         });
     } else {
-        connection = mysql.createConnection({
+        connection = mysql2.createConnection({
             host: config.host || '127.0.0.1',
             user: config.user || 'root',
             password: config.password || 'root',
